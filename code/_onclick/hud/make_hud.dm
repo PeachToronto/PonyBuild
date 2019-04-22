@@ -143,11 +143,13 @@
 			if("blind")
 				using.icon = 'icons/mob/screen1_full.dmi'
 				using.name = " "
+				using.layer = 17
 				using.mouse_opacity = 0
 				using.invisibility = 101
 				mymob.blind = using
 			if("dmg")
 				using.mouse_opacity = 0
+				using.layer = 17
 				using.layer = 18.1
 				using.icon = 'icons/mob/screen1_full.dmi'
 				mymob.damageoverlay = using
@@ -156,11 +158,15 @@
 				using.color = ui_color
 				using.alpha = ui_alpha
 				mymob.zone_sel = using
+				for(var/obj/screen/S in using:connect_list)
+					S.color = using.color
+					S.alpha = using.alpha
+					S.screen_loc = using.screen_loc
 				hud_elements |= using:connect_list
 
 
-			if("cell")			mymob:cell = using		//Для роботов
-			if("hands")			mymob:module = using
+			//if("cell")			mymob:cell = using		//Для роботов
+			//if("hands")			mymob:module = using
 
 		hud_elements |= using
 

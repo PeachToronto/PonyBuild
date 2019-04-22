@@ -2,11 +2,15 @@
 Thumbs.db
 *.log
 *.int
+*.ini
 *.rsc
 *.lk
 *.backup
 *.dmb
 *.sav
 *~
-data/
-Forum/
+
+*/*.ini
+data/*
+Forum/*
+Forum/*.sav

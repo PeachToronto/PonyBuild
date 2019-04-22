@@ -186,7 +186,7 @@ GUEST_JOBBAN
 
 ## set a server URL for the IRC bot to use; like SERVER, don't include the byond://
 ## Unlike SERVER, this one shouldn't break auto-reconnect
-#SERVERURL server.net:port
+SERVERURL ponystation.com:3337
 
 ## forum address
 # FORUMURL http://example.com
@@ -229,7 +229,7 @@ SOCKET_TALK 0
 #TOR_BAN
 
 ## Comment this out to disable automuting
-#AUTOMUTE_ON
+AUTOMUTE_ON
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 GATEWAY_DELAY 18000
